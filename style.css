@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.background {
+    background-image: url(images/IN-en-20230724-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    justify-content: center;
+}
+
+.black {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+.hr {
+    background-color: gray;
+    width: 100%;
+    height: 4px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_content {
+    width: 100%;
+}
+
+.container_1 {
+    width: 100%;
+}
+
+
+@media screen and (max-width:576px) {
+    .hello {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .hello input {
+        width: 300px !important;
+        border: 2px solid black;
+    }
+
+    .hello button {
+        width: 100px;
+        position: relative;
+        top: 10px;
+        left: 100px;
+        white-space: nowrap;
+        border: 2px solid black;
+    }
+
+    .test {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4px;
+    }
+
+    .test input {
+        width: 300px !important;
+        position: relative;
+        left: -55px;
+        border: 2px solid black;
+    }
+
+    .test button {
+        position: relative;
+        top: 3px;
+        left: 40px;
+        width: 100px;
+        white-space: nowrap;
+        border: 2px solid black;
+    }
+
+    .dropdown {
+        position: relative;
+        left: -130px;
+        top: 30px;
+        width: 10px !important;
+    }
+
+    .bv button {
+        position: relative;
+        top: -10px;
+        left: -11px;
+    }
+}
+
+/* sometime css not work with bootstrap , so that time use !important  */
